@@ -25,9 +25,9 @@ $apiConfig = array(
     'application_name' => 'Kampung Jawa Resto',
 
     // OAuth2 Settings, you can get these keys at https://code.google.com/apis/console
-    'oauth2_client_id' => '841604280955-28ceidi0ekh53bdde1ul7ng0oieinjks.apps.googleusercontent.com',
-    'oauth2_client_secret' => 'h9ZMuM8eox2DhlHhtAYyR7bs',
-    'oauth2_redirect_uri' => 'http://web.kampungjawa.com/login/with_google',
+    'oauth2_client_id' => 'Your Client ID',
+    'oauth2_client_secret' => 'Your Client Secret',
+    'oauth2_redirect_uri' => 'Your redirect url',
 
     // The developer key, you get this at https://code.google.com/apis/console
     'developer_key' => '',
@@ -39,7 +39,7 @@ $apiConfig = array(
     'oauth_consumer_secret' => 'anonymous',
   
     // Site name to show in the Google's OAuth 1 authentication screen.
-    'site_name' => 'http://web.kampungjawa.com/login/with_google',
+    'site_name' => 'Your site',
 
     // Which Authentication, Storage and HTTP IO classes to use.
     'authClass'    => 'apiOAuth2',
