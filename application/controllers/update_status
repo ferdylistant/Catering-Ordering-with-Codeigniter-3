@@ -1,0 +1,36 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class update_status extends CI_Controller {
+	public function __construct() {
+		parent::__construct();
+		$params = array('server_key' => 'SB-Mid-server-Q2zVnvjTjb5MYFx4-5AE1c_F', 'production' => false);
+		$this->load->library('midtrans');
+		$this->midtrans->config($params);
+		$this->load->model('pelanggan_model');
+		$this->load->model('chatbot_model');
+		$this->load->library('session');
+	}
+
+	public function index()
+	{
+		$id_pelanggan = $this->session->userdata('id_pelanggan');
+		$transaksi = $this->pelanggan_model->OrderRiwayatTransaksi($id_pelanggan);
+		foreach ($transaksi->result_array() as $i => $idt){
+			$st[]= json_decode(json_encode($this->midtrans->status($idt['id_transaksi'])),true);
+			$status = [
+				'waktu_transaksi' => $st[$i]['transaction_time'],
+				'kode_status' => $st[$i]['status_code'],
+				'status_transaksi' => $st[$i]['transaction_status'],
+				'pesan_status' => $st[$i]['status_message']
+			];
+			$id_tr = ['id_transaksi' =>$st[$i]['transaction_id']];
+			$id_or = ['id_order' => $st[$i]['order_id']];
+			$this->db->update('tbl_transaksi',$status,$id_tr);
+			$this->db->update('tbl_order',array('status_order'=>$status['kode_status']),$id_or);
+		}
+	}
+}
+
+/* End of file update_status */
+/* Location: ./application/controllers/update_status */

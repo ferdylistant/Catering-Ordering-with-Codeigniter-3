@@ -1,0 +1,136 @@
+/*ukuran responsive ketika window dikecilkan*/
+@media (max-width: 640px) {
+.contactpage {
+  padding:30px 0;
+}
+.contactpage .lingkaran {
+  margin:5px 0 0 0;
+}
+}
+@media (max-width: 992px) {
+.heading-border {
+  background:none;
+}
+.foot-border{
+  background:none;
+}
+.contactpage .lingkaran {
+  border: 4px double #e4e4e4;
+  padding: 60px 20px;
+  text-align: center;
+}
+.contactpage .kotak-dasar {
+  margin: 25px 0 0 0;
+}
+}
+@media (max-width: 1199px) {
+.contactpage .heading-border {
+  height: 25px;
+}
+.contactpage .kotak-dasar:hover .heading-border{
+  height: 25px;
+}
+}
+
+/*------------------------------*/
+
+.contactpage{ 
+  padding:99px 0;
+}
+.contactpage .kotak-dasar{
+  margin: 85px 0 0 0;
+}
+.contactpage i{
+  background-color: #fff;
+  border:solid 1px #e4e4e4;
+}
+.contactpage .heading-border{
+  background:url(../images/header.png) no-repeat;
+  height: 32px;
+  background-size: 100%;
+  padding-bottom: 160px;
+}
+.contactpage .foot-border{
+  background:url(../images/bottom.png) no-repeat;
+  height: 32px;
+  background-size: 100%;
+  padding-bottom: 190px;
+}
+.contactpage .lingkaran{
+  border-right: 4px double #e4e4e4;
+  border-left: 4px double #e4e4e4;  
+  border-top: 4px double #e4e4e4;
+  border-bottom: 4px double #e4e4e4;
+  padding:28px 20px;
+  text-align: center;
+}
+.contactpage .lingkaran h6{
+  margin: 36px 0 0 0;
+}
+.contactpage .lingkaran p{
+  margin: 5px 0 0 0;
+}
+.contactpage .lingkaran a{
+  margin: 32px 0 0 0;
+  background-color: #fff;
+  border: solid 1px #e4e4e4;
+  color: #5d5d5d;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.contactpage .ig-btn:hover {
+  background: #fff;
+  color: #000;
+  border:solid 1px;
+  border-top-color: #990099;
+  border-left-color: #ff9933;
+  border-right-color: #330066;
+  border-bottom-color: #ff3366;
+  border-radius: 20%;
+}
+.contactpage .em-btn:hover{
+  background:#fff;
+  color: #000;
+  border:solid 1px;
+  border-top-color: #212529;
+  border-left-color: #333333;
+  border-right-color: #666666;
+  border-bottom-color: #999999;
+  border-radius: 20%;
+}
+.contactpage .wa-btn:hover{
+  background:#fff;
+  color: #000;
+  border:solid 1px;
+  border-top-color: #00cc00;
+  border-left-color: #33ff33;
+  border-right-color: #66cc66;
+  border-bottom-color: #00ff00;
+  border-radius: 20%;
+}
+.contactpage .lingkaran i{
+  font-size: 70px;
+  background-color: #e4e4e4;
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+  padding: 37px;
+  display: inline-block;
+}
+.ig-icon{
+  background: url(../images/icon/ig.png) no-repeat;
+  background-size: 30%;
+  background-position: center;
+}
+.wa-icon{
+  background: url(../images/icon/wa.png) no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+.em-icon{
+  background: url(../images/icon/em.png) no-repeat;
+  background-size: 80%;
+  background-position: center;
+}

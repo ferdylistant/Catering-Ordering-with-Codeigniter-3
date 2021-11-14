@@ -1,0 +1,38 @@
+/* MIT License */
+/* Copyright (c) 2019 Maykheld (http://www.maykheld.com) */
+@font-face {
+  font-family: wa;
+  src: url('./dist/whatsapp.ttf');
+}
+.myk-ava,.myk-btn,.myk-list,.myk-name,.myk-panel,.myk-wa-icon,.myk-who,.myk-number,
+.myk-panelhead,.myk-wa-icon,.myk-paneltitle{margin: 0px;padding: 0px; font-family: wa}
+
+.myk-btn{position: fixed;width: 60px;
+  height: 60px;
+  bottom: 49.5px;
+  left: 40px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;box-shadow: 3px 3px 4px #cccccc; cursor: pointer;justify-content: center;transition: all 0.5s;margin: 0;z-index: 999;}
+.myk-btn:hover{transform: scale(1.1);
+  color:white;}
+.myk-btn img{width: 30px}
+.myk-wa-icon{
+	width: 30px;
+}
+.myk-panel{position: fixed;left: 30px;bottom:125px;background-color: #ECE5DD;width: 300px; height:0px;box-shadow: 0px 0px 10px #075E54;overflow-y: hidden;border-radius: 10px; transition: all 0.5s ease-out; }
+.myk-panel .myk-list{background-color: #ffffff;overflow: hidden;display: block;font-weight: lighter; padding: 20px 10px;color:#333; text-decoration: none; font-family: wa;border-bottom: 0.5px solid #cccccc}
+.myk-panel .myk-ava {width: 40px;float: left;margin-right:20px }
+.myk-panelhead{background-color: #25D366;text-align: center;color: white;height: 100px; }
+
+.myk-paneltitle{font-weight: lighter;}
+.myk-show{height:400px}
+.myk-panelbody{overflow-y: scroll;height: calc(100% - 100px)}
+
+@media only screen and (max-width: 400px) {
+    .myk-panel{width: 100%;right: 0;top: 0;bottom: 0;}
+    .myk-panel.myk-show{height: 100%}
+}
+.myk-close{display: block;background-color: #dc3545;color: white;cursor: pointer;align-items: center;width: 50px;transition: ease all 0.3s;overflow: hidden;border-bottom-right-radius: 10px;}
+.myk-close:hover{color:#d6b8b7;}
